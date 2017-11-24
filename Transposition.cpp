@@ -1,3 +1,9 @@
+/**
+* Created by Ryan Rupert
+* Date: 2017-11-07
+* Source: None
+* This will encode and decode using a transposition cipher
+*/
 #include "Transposition.h"
 
 int *Trasposition::Encode(int plain[], int i_max)
