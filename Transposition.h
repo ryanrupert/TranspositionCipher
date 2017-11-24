@@ -7,5 +7,5 @@ class Transposition
 		int *Decode(int cipher[], int i_max);
 		void clear();
 	private:
-		int *table[][] = NULL;
+		int **table = NULL;
 };

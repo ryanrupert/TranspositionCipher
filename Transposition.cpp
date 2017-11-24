@@ -17,7 +17,11 @@ int *Trasposition::Encode(int plain[], int i_max)
 	//output
 	int output[length];
 	//create new 2 dem int arrays
-	table = new int [5][7];
+	table = new int*[5];
+	for (int i = 0; i < 5; i++) 
+	{
+		table[i] = new int[7];
+	}
 	for (int i = 0; i < i_max; i++) 
 	{
 		for (int j = 0; j < j_max; j++) 
