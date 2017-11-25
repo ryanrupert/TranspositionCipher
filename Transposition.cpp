@@ -66,6 +66,10 @@ int *Trasposition::Encode(int plain[], int i_max)
 	return output;
 }
 
+int *Transposition::Decode(int cipher[], int i_max)
+{
+}
+
 void Transposition::clear()
 {
 	for (int i = 0; i < m_i_max; i++)
