@@ -1,3 +1,9 @@
+/**
+* Created by Ryan Rupert
+* Date: 2017-11-24
+* Source: None
+* This is the header for the Transposition cipher class
+*/
 #pragma once
 #include <cmath>
 
