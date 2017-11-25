@@ -71,6 +71,21 @@ int *Transposition::Decode(int cipher[], int i_max)
 	if(!m_i_max)
 		this -> clear();
 	m_i_max = i_max;
+	//this will hold the count of offsets
+	int count = 0;
+	bool max = true;
+	//index
+	int index = 0;
+	//find the length of the array
+	int length = sizeof(cipher);
+	//find the number of column's needed
+	int j_max = ceil(length / i_max);
+	//area of the table
+	int area = i_max * j_max;
+	//this will hold the offset
+	int offset = area - length;
+	//output
+	int output[length];
 }
 
 void Transposition::clear()
