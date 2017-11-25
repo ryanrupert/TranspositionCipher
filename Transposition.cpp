@@ -15,7 +15,7 @@ int *Trasposition::Encode(int plain[], int i_max)
 	//index
 	int index = 0;
 	//find the length of the array
-	int length = sizeof(plain);
+	int length = sizeof(plain) = sizeof(plain[]);
 	//find the number of column's needed
 	int j_max = ceil(length / i_max);
 	//output
@@ -77,7 +77,7 @@ int *Transposition::Decode(int cipher[], int i_max)
 	//index
 	int index = 0;
 	//find the length of the array
-	int length = sizeof(cipher);
+	int length = sizeof(cipher) / sizeof(cipher[]);
 	//find the number of column's needed
 	int j_max = ceil(length / i_max);
 	//area of the table
