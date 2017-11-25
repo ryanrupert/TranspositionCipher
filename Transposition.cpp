@@ -44,6 +44,8 @@ int *Trasposition::Encode(int plain[], int i_max)
 			break;
 		}
 	}
+	index = 0;
+	max = false;
 	for (int j = 0; j < j_max; j++) 
 	{
 		for (int i = 0; i < i_max; i++) 
