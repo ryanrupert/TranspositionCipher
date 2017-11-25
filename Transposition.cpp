@@ -8,6 +8,9 @@
 
 int *Trasposition::Encode(int plain[], int i_max)
 {
+	if(!m_i_max)
+		this -> clear();
+	m_i_max = i_max;
 	//index
 	int index = 0;
 	//find the length of the array
