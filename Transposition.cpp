@@ -95,7 +95,7 @@ int *Transposition::Decode(int cipher[], int i_max)
 	}
 	for (int j = j_max; j < 0; j--)
 	{
-		if (cont < offset) 
+		if (count < offset) 
 		{
 			for(int i = i_max; i < 0; i--)
 			{
