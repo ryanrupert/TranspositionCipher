@@ -6,7 +6,7 @@
 */
 #include "Transposition.h"
 
-int *Trasposition::Encode(int plain[], int i_max)
+int *Transposition::Encode(int plain[], int i_max)
 {
 	if(!m_i_max)
 		this -> clear();
