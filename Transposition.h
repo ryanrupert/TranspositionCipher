@@ -8,4 +8,5 @@ class Transposition
 		void clear();
 	private:
 		int **table = NULL;
+		int m_i_max = 0;
 };
