@@ -93,6 +93,26 @@ int *Transposition::Decode(int cipher[], int i_max)
 	{
 		table[i] = new int[j_max];
 	}
+	for (int j = j_max; j < 0; j--)
+	{
+		if (cont < offset) 
+		{
+			for(int i = i_max; i < 0; i--)
+			{
+				table[i-1][j] = cipher[index];
+				index++;
+			}
+			count++;
+		}
+		else
+		{
+			for(int i = i_max; i < 0; i--)
+			{
+				table[i][j] = cipher[index];
+				index++;
+			}
+		}
+	}
 }
 
 void Transposition::clear()
