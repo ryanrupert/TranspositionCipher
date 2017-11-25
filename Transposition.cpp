@@ -39,3 +39,13 @@ int *Trasposition::Encode(int plain[], int i_max)
 	}
 	return output;
 }
+
+void Transposition::clear()
+{
+	for (int i = 0; i < m_i_max; i++)
+	{
+		delete[] table[i];
+	}
+	delete[] table;
+	table = NULL;
+}
