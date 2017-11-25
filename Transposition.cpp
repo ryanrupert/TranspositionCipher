@@ -113,6 +113,21 @@ int *Transposition::Decode(int cipher[], int i_max)
 			}
 		}
 	}
+	for (int i = 0; i < i_max; i++)
+	{
+		for (int j = 0; j < j_max; j++)
+		{
+			if (length == index)
+			{
+				max = true;
+				break;
+			}
+			output[index] = table[i][j];
+			index++;
+		}
+		if(max)
+			break;
+	}
 }
 
 void Transposition::clear()
