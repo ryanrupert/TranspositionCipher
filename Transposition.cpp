@@ -86,6 +86,13 @@ int *Transposition::Decode(int cipher[], int i_max)
 	int offset = area - length;
 	//output
 	int output[length];
+	//create new 2 dem int arrays
+	//Source: https://www.tutorialcup.com/cplusplus/dynamic-memory.htm
+	table = new int*[i_max];
+	for(int i = 0; i < i_max; i++)
+	{
+		table[i] = new int[j_max];
+	}
 }
 
 void Transposition::clear()
