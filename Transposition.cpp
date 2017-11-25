@@ -50,7 +50,17 @@ int *Trasposition::Encode(int plain[], int i_max)
 	{
 		for (int i = 0; i < i_max; i++) 
 		{
-			output = table[i][j];
+			if (index == length) 
+			{
+				max = true;
+				break;
+			}
+			output[index] = table[i][j];
+			index++;
+		}
+		if (max) 
+		{
+			break;
 		}
 	}
 	return output;
