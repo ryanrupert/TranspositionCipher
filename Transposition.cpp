@@ -11,6 +11,7 @@ int *Trasposition::Encode(int plain[], int i_max)
 	if(!m_i_max)
 		this -> clear();
 	m_i_max = i_max;
+	bool max = false;
 	//index
 	int index = 0;
 	//find the length of the array
@@ -30,8 +31,17 @@ int *Trasposition::Encode(int plain[], int i_max)
 	{
 		for (int j = 0; j < j_max; j++) 
 		{
+			if (index == length) 
+			{
+				max = true;
+				break;
+			}
 			table[i][j] = plain[index];
 			index++;
+		}
+		if (max) 
+		{
+			break;
 		}
 	}
 	for (int j = 0; j < j_max; j++) 
