@@ -6,7 +6,7 @@
 */
 #include "Transposition.h"
 
-int *Transposition::Encode(int plain[], int i_max)
+int *Transposition::Encode(int plain[], int length, int i_max)
 {
 	if(!m_i_max)
 		this -> clear();
@@ -15,7 +15,7 @@ int *Transposition::Encode(int plain[], int i_max)
 	//index
 	int index = 0;
 	//find the length of the array
-	int length = sizeof(plain) / sizeof(plain[0]);
+	//int length = sizeof(plain) / sizeof(plain[0]);
 	//find the number of column's needed
 	int j_max = ceil(length / i_max);
 	//output
@@ -66,7 +66,7 @@ int *Transposition::Encode(int plain[], int i_max)
 	return output;
 }
 
-int *Transposition::Decode(int cipher[], int i_max)
+int *Transposition::Decode(int cipher[], int length, int i_max)
 {
 	if(!m_i_max)
 		this -> clear();
@@ -77,7 +77,7 @@ int *Transposition::Decode(int cipher[], int i_max)
 	//index
 	int index = 0;
 	//find the length of the array
-	int length = sizeof(cipher) / sizeof(cipher[0]);
+	//int length = sizeof(cipher) / sizeof(cipher[0]);
 	//find the number of column's needed
 	int j_max = ceil(length / i_max);
 	//area of the table
