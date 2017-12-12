@@ -17,7 +17,7 @@ void Transposition::Encode(int plain[], int length, int i_max)
 	//find the length of the array
 	//int length = sizeof(plain) / sizeof(plain[0]);
 	//find the number of column's needed
-	int j_max = ceil(length / i_max);
+	int j_max = ceil(static_cast<double>(length) / static_cast<double>(i_max));
 	//output
 	int output[length];
 	//create new 2 dem int arrays
