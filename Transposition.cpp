@@ -6,7 +6,7 @@
 */
 #include "Transposition.h"
 
-int *Transposition::Encode(int plain[], int length, int i_max)
+void Transposition::Encode(int plain[], int length, int i_max)
 {
 	if(!m_i_max)
 		this -> clear();
@@ -55,7 +55,7 @@ int *Transposition::Encode(int plain[], int length, int i_max)
 				max = true;
 				break;
 			}
-			output[index] = table[i][j];
+			plain[index] = table[i][j];
 			index++;
 		}
 		if (max) 
@@ -63,7 +63,6 @@ int *Transposition::Encode(int plain[], int length, int i_max)
 			break;
 		}
 	}
-	return output;
 }
 
 int *Transposition::Decode(int cipher[], int length, int i_max)

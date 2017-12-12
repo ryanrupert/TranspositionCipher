@@ -11,7 +11,7 @@
 class Transposition
 {
 	public:
-		int *Encode(int plain[], int length, int i_max);
+		void Encode(int plain[], int length, int i_max);
 		int *Decode(int cipher[], int length, int i_max);
 		void clear();
 	private:
