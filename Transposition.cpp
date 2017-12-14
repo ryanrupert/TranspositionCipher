@@ -27,9 +27,9 @@ void Transposition::Encode(int plain[], int length, int i_max)
 	{
 		table[i] = new int[j_max];
 	}
-	for (int i = 0; i < i_max; i++) 
+	for (int j = 0; j < j_max; j++) 
 	{
-		for (int j = 0; j < j_max; j++) 
+		for (int i = 0; i < i_max; i++) 
 		{
 			if (index == length) 
 			{
@@ -46,9 +46,9 @@ void Transposition::Encode(int plain[], int length, int i_max)
 	}
 	index = 0;
 	max = false;
-	for (int j = 0; j < j_max; j++) 
+	for (int i = 0; i < i_max; i++) 
 	{
-		for (int i = 0; i < i_max; i++) 
+		for (int j = 0; j < j_max; j++) 
 		{
 			if (index == length) 
 			{
